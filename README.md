@@ -3,6 +3,7 @@
 ## About The Project
 
 ![react-project](https://user-images.githubusercontent.com/56833060/113619611-1abc5680-9651-11eb-8bd4-738de1babbcb.gif)
+![Live version](https://main.dba87zfskvtky.amplifyapp.com/)
 
 This is a Basic Memegenerator that gives users the ability to add captions to meme templates, drag and resize the captions around
 the template meme.
