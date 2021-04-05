@@ -2,7 +2,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-![Product Name Screen Shot]
+![ReactMeme gen](https://user-images.githubusercontent.com/56833060/113587187-568df680-9626-11eb-88e0-7d62b07e21cf.gif)
 
 This is a Basic Memegenerator that gives users the ability to add captions to meme templates, drag and resize the captions around
 the template meme.
