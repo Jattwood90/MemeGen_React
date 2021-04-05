@@ -45,12 +45,12 @@ export default function MemeApp() {
     //Api logic
     useEffect(() => {
         try {
-            fetch('http://127.0.0.1:8000/%5Eapi/item/').then(x =>
-            x.json().then(response => setMemes(response) ));
+            fetch('https://api.imgflip.com/get_memes ').then(x =>
+            x.json().then(response => setMemes(response.data.memes) ));
         } catch (e) {
             console.log(e)
             }
-        }, []); //prevents infinite rendering loop!
+        }, []); //http://127.0.0.1:8000/%5Eapi/item/ was my API, until I encountered AWS issues...
 
     return (
         <div className="maincontainer">
@@ -81,9 +81,9 @@ export default function MemeApp() {
             <div className="mmcontainer">
                 {memes.map(response => {
                     return (
-                    <img onClick={() => setMeme(((meme) => [response.image]))} 
+                    <img onClick={() => setMeme(((meme) => [response.url]))} 
                         className="mmbox" key={response.id} 
-                        src={response.image} alt={response.title}
+                        src={response.url} alt={response.name}
                         id="image-change" >
                     </img>);         
                     })}
